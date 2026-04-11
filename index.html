@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hasan Rezaee - Experienced Fullstack Flutter Developer specializing in high-performance, cross-platform apps.">
+    <title>Hasan Rezaee | Flutter Developer</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Background elements for glassmorphism effect -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <nav class="navbar glass">
+        <div class="nav-container">
+            <a href="#" class="logo">HR.</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#apps">Apps</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content reveal">
+                <p class="greeting">Hi, I am</p>
+                <h1 class="name">Hasan Rezaee</h1>
+                <h2 class="title">Fullstack <span class="gradient-text">Flutter Developer</span></h2>
+                <p class="summary">
+                    Experienced Flutter developer with 3 years of building high-performance, cross-platform apps. 
+                    Specialized in state management and offline-first development.
+                </p>
+                <div class="cta-group">
+                    <a href="#apps" class="btn btn-primary">View My Apps</a>
+                    <a href="#about" class="btn btn-outline">Read More</a>
+                </div>
+            </div>
+            <div class="hero-image reveal">
+                <div class="image-wrapper glass">
+                    <img src="assets/profile.png" alt="Hasan Rezaee Profile" onerror="this.src='https://via.placeholder.com/400x400/1e2029/00ff88?text=HR'">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <h2 class="section-title reveal">About Me</h2>
+            <div class="about-grid reveal glass card">
+                <div class="about-text">
+                    <p>
+                        I am a passionate Flutter developer with expertise in building robust applications using 
+                        <span class="highlight">Riverpod, GetX, Provider, Flutter Commands, and Watch It</span>.
+                    </p>
+                    <p>
+                        My focus lies heavily on offline-first development, taking advantage of local database 
+                        solutions like <span class="highlight">Hive, Isar, and Drift</span>. I implement 
+                        scalable architectures (PFA) and prioritize performance optimization to deliver 
+                        incredibly smooth user experiences. 
+                    </p>
+                </div>
+                <div class="skills">
+                    <span class="skill-tag">Flutter</span>
+                    <span class="skill-tag">Dart</span>
+                    <span class="skill-tag">Java / Kotlin</span>
+                    <span class="skill-tag">GetX / Riverpod</span>
+                    <span class="skill-tag">Offline-First</span>
+                    <span class="skill-tag">Local DBs (Hive, SQLite, Isar)</span>
+                    <span class="skill-tag">Supabase / Postgres</span>
+                    <span class="skill-tag">UI/UX Design</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section">
+            <h2 class="section-title reveal">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item reveal glass card">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <small class="timeline-date">Feb 2025 — Mar 2025</small>
+                        <h3>Fullstack Flutter Developer</h3>
+                        <h4>Five Star Hangar & Industrial Co.</h4>
+                        <p>
+                            Developed a Windows sales management system with multi-user support, dynamic tab management, 
+                            and custom PDF printing for invoices. Utilized GetX for state management, designed an intuitive 
+                            UI with color-coded sections, and implemented a Supabase-powered backend for real-time sync. 
+                            Added offline support with Brick to ensure functionality without an internet connection.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Apps Showcase Section -->
+        <section id="apps" class="apps-section">
+            <h2 class="section-title reveal">Featured App</h2>
+            
+            <div class="featured-app glass card reveal">
+                <div class="app-visual">
+                    <img src="assets/ez_recorder_feature.png" alt="EZRecorder App Feature Graphic" onerror="this.src='https://via.placeholder.com/800x400/1e2029/00ff88?text=EZ+Recorder'">
+                </div>
+                <div class="app-details">
+                    <h3 class="app-title">Voice Recorder App, EZRecorder</h3>
+                    <p class="app-timeline">Feb 2024 — Sep 2024</p>
+                    <p class="app-description">
+                        A high-quality audio recording app built with Flutter, featuring customizable bitrate, 
+                        format selection, and noise reduction — designed and published independently with a 
+                        focus on performance and usability.
+                    </p>
+                    <div class="app-tech">
+                        <span>Flutter</span>
+                        <span>State Management</span>
+                        <span>Audio Processing</span>
+                    </div>
+                    <div class="app-links">
+                        <a href="https://play.google.com/store/apps/details?id=com.hasanmadenotex.ez_recorder" target="_blank" class="btn btn-primary">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 3.5V20.5L18.5 12L4 3.5Z" fill="currentColor"/>
+                            </svg>
+                            Get it on Google Play
+                        </a>
+                        <a href="policies/ez_recorder_pp.html" class="btn btn-outline small">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <h2 class="section-title reveal">Get In Touch</h2>
+            <div class="contact-card reveal glass card">
+                <p>I am currently available for new opportunities. Whether you have a question or just want to say hi, I will try my best to get back to you!</p>
+                <div class="contact-links">
+                    <a href="mailto:hasan.movahhedi.developer@gmail.com" class="btn btn-primary">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z" fill="currentColor"/>
+                        </svg>
+                        hasan.movahhedi.developer@gmail.com
+                    </a>
+                    <a href="https://github.com/hasandevx" target="_blank" class="btn btn-outline" rel="noopener noreferrer">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12C2 16.42 4.868 20.166 8.84 21.488C9.34 21.578 9.52 21.272 9.52 21.012C9.52 20.78 9.512 20.162 9.506 19.336C6.726 19.94 6.14 17.994 6.14 17.994C5.686 16.84 5.034 16.534 5.034 16.534C4.128 15.914 5.102 15.926 5.102 15.926C6.104 15.996 6.63 16.956 6.63 16.956C7.52 18.48 8.966 18.04 9.54 17.78C9.63 17.126 9.892 16.684 10.182 16.436C7.962 16.184 5.63 15.326 5.63 11.472C5.63 10.372 6.022 9.472 6.666 8.766C6.562 8.514 6.216 7.484 6.764 6.084C6.764 6.084 7.608 5.814 9.5 7.094C10.302 6.87 11.156 6.76 12 6.756C12.842 6.76 13.696 6.87 14.5 7.094C16.39 5.814 17.232 6.084 17.232 6.084C17.782 7.484 17.438 8.514 17.334 8.766C17.98 9.472 18.37 10.372 18.37 11.472C18.37 15.338 16.036 16.18 13.806 16.424C14.168 16.738 14.492 17.354 14.492 18.324C14.492 19.714 14.48 20.84 14.48 21.012C14.48 21.276 14.658 21.584 15.168 21.486C19.136 20.16 22 16.418 22 12C22 6.477 17.522 2 12 2Z" fill="currentColor"/>
+                        </svg>
+                        GitHub Profile
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer glass">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>HR.</h3>
+                <p>Building high-performance Flutter experiences.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="policies/ez_recorder_pp.html">EZRecorder Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 Hasan Rezaee. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
