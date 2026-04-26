@@ -1,2 +1,1 @@
 google.com, pub-8938434330321673, DIRECT, f08c47fec0942fa0
-contact=hasan.movahhedi.developer@gmail.com
