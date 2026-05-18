@@ -406,6 +406,12 @@ main section {
 /* ==========================================================================
    Apps Showcase Section
    ========================================================================== */
+.apps-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
 .featured-app {
     display: flex;
     flex-direction: column;
