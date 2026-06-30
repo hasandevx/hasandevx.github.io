@@ -407,9 +407,9 @@ main section {
    Apps Showcase Section
    ========================================================================== */
 .apps-container {
-    display: flex;
-    flex-direction: column;
-    gap: 4.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
 }
 
 .featured-app {
@@ -480,6 +480,7 @@ main section {
     display: flex;
     align-items: center;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 /* ==========================================================================
@@ -576,6 +577,10 @@ main section {
 }
 
 @media (max-width: 900px) {
+    .apps-container {
+        grid-template-columns: 1fr;
+    }
+
     .hero-section {
         flex-direction: column-reverse;
         text-align: center;
