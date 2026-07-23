@@ -304,78 +304,140 @@
             </div>
         </section>
 
-        <!-- Interactive Screenshots Carousel Section -->
+        <!-- Interactive Screenshots Side-by-Side Horizontal Showcase Section -->
         <section id="screenshots" class="screenshots-section">
-            <div class="section-header center">
-                <span class="section-badge">INTERFACE GALLERY</span>
-                <h2 class="section-heading">Sleek. Modern. Intuitive.</h2>
-                <p class="section-subheading">Take a look inside the Voice Recorder &amp; Editor Wavly Android experience.</p>
+            <div class="section-header-wrap">
+                <div class="section-header-left">
+                    <span class="section-badge">INTERFACE GALLERY</span>
+                    <h2 class="section-heading">Explore Every Screen</h2>
+                    <p class="section-subheading">Scroll horizontally to view the app in real smartphone frames.</p>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-btn" id="slide-left-btn" onclick="scrollScreenshots(-320)" aria-label="Scroll Screenshots Left">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
+                    </button>
+                    <button class="slider-btn" id="slide-right-btn" onclick="scrollScreenshots(320)" aria-label="Scroll Screenshots Right">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+                    </button>
+                </div>
             </div>
 
-            <div class="phone-carousel-container reveal">
-                <div class="phone-devices-grid">
-                    <div class="device-card glass" onclick="changeHeroScreen('assets/Wavly/image1.jpg')">
-                        <div class="device-screen-wrapper">
-                            <img src="assets/Wavly/image1.jpg" alt="Wavly Screenshot 1 - Audio Recording Screen" loading="lazy">
+            <!-- Horizontal Phone Track -->
+            <div class="horizontal-phone-track-wrapper reveal">
+                <div class="horizontal-phone-track" id="phone-track">
+                    <!-- Phone Frame 1 -->
+                    <div class="phone-card-item" onclick="openLightbox('assets/Wavly/image1.jpg', 'HD Waveform Recorder Screen')">
+                        <div class="mini-phone-frame">
+                            <div class="mini-speaker"></div>
+                            <div class="mini-camera"></div>
+                            <div class="mini-screen">
+                                <img src="assets/Wavly/image1.jpg" alt="Wavly App Screenshot 1 - Audio Recording Waveform Interface">
+                            </div>
+                            <div class="mini-glass-overlay"></div>
+                            <div class="zoom-hover-badge">🔍 Zoom</div>
                         </div>
-                        <div class="device-caption">
+                        <div class="phone-item-caption">
                             <h4>Recorder Screen</h4>
-                            <p>Real-time waveform visualizer</p>
+                            <span>Real-time waveform visualizer</span>
                         </div>
                     </div>
 
-                    <div class="device-card glass" onclick="changeHeroScreen('assets/Wavly/image2.jpg')">
-                        <div class="device-screen-wrapper">
-                            <img src="assets/Wavly/image2.jpg" alt="Wavly Screenshot 2 - Voice Library" loading="lazy">
+                    <!-- Phone Frame 2 -->
+                    <div class="phone-card-item" onclick="openLightbox('assets/Wavly/image2.jpg', 'Organized Audio Library')">
+                        <div class="mini-phone-frame">
+                            <div class="mini-speaker"></div>
+                            <div class="mini-camera"></div>
+                            <div class="mini-screen">
+                                <img src="assets/Wavly/image2.jpg" alt="Wavly App Screenshot 2 - Voice Notes & Audio File List">
+                            </div>
+                            <div class="mini-glass-overlay"></div>
+                            <div class="zoom-hover-badge">🔍 Zoom</div>
                         </div>
-                        <div class="device-caption">
+                        <div class="phone-item-caption">
                             <h4>Recordings Library</h4>
-                            <p>Organized audio list</p>
+                            <span>Organized audio list</span>
                         </div>
                     </div>
 
-                    <div class="device-card glass" onclick="changeHeroScreen('assets/Wavly/image3.jpg')">
-                        <div class="device-screen-wrapper">
-                            <img src="assets/Wavly/image3.jpg" alt="Wavly Screenshot 3 - Waveform Editor" loading="lazy">
+                    <!-- Phone Frame 3 -->
+                    <div class="phone-card-item" onclick="openLightbox('assets/Wavly/image3.jpg', 'Precision Audio Waveform Trimming')">
+                        <div class="mini-phone-frame">
+                            <div class="mini-speaker"></div>
+                            <div class="mini-camera"></div>
+                            <div class="mini-screen">
+                                <img src="assets/Wavly/image3.jpg" alt="Wavly App Screenshot 3 - Audio Editor & Trimming Tool">
+                            </div>
+                            <div class="mini-glass-overlay"></div>
+                            <div class="zoom-hover-badge">🔍 Zoom</div>
                         </div>
-                        <div class="device-caption">
+                        <div class="phone-item-caption">
                             <h4>Audio Editor</h4>
-                            <p>Precision waveform cutter</p>
+                            <span>Precision waveform cutter</span>
                         </div>
                     </div>
 
-                    <div class="device-card glass" onclick="changeHeroScreen('assets/Wavly/image4.jpg')">
-                        <div class="device-screen-wrapper">
-                            <img src="assets/Wavly/image4.jpg" alt="Wavly Screenshot 4 - Cloud Sync" loading="lazy">
+                    <!-- Phone Frame 4 -->
+                    <div class="phone-card-item" onclick="openLightbox('assets/Wavly/image4.jpg', 'Google Drive Cloud Sync Settings')">
+                        <div class="mini-phone-frame">
+                            <div class="mini-speaker"></div>
+                            <div class="mini-camera"></div>
+                            <div class="mini-screen">
+                                <img src="assets/Wavly/image4.jpg" alt="Wavly App Screenshot 4 - Google Drive Cloud Backup Settings">
+                            </div>
+                            <div class="mini-glass-overlay"></div>
+                            <div class="zoom-hover-badge">🔍 Zoom</div>
                         </div>
-                        <div class="device-caption">
+                        <div class="phone-item-caption">
                             <h4>Cloud Backup</h4>
-                            <p>Google Drive integration</p>
+                            <span>Google Drive integration</span>
                         </div>
                     </div>
 
-                    <div class="device-card glass" onclick="changeHeroScreen('assets/Wavly/image5.jpg')">
-                        <div class="device-screen-wrapper">
-                            <img src="assets/Wavly/image5.jpg" alt="Wavly Screenshot 5 - Audio Player" loading="lazy">
+                    <!-- Phone Frame 5 -->
+                    <div class="phone-card-item" onclick="openLightbox('assets/Wavly/image5.jpg', 'High-Fidelity Audio Player')">
+                        <div class="mini-phone-frame">
+                            <div class="mini-speaker"></div>
+                            <div class="mini-camera"></div>
+                            <div class="mini-screen">
+                                <img src="assets/Wavly/image5.jpg" alt="Wavly App Screenshot 5 - Audio Player & Waveform Visualizer">
+                            </div>
+                            <div class="mini-glass-overlay"></div>
+                            <div class="zoom-hover-badge">🔍 Zoom</div>
                         </div>
-                        <div class="device-caption">
+                        <div class="phone-item-caption">
                             <h4>HD Audio Player</h4>
-                            <p>Smooth playback control</p>
+                            <span>Smooth playback control</span>
                         </div>
                     </div>
 
-                    <div class="device-card glass" onclick="changeHeroScreen('assets/Wavly/image6.jpg')">
-                        <div class="device-screen-wrapper">
-                            <img src="assets/Wavly/image6.jpg" alt="Wavly Screenshot 6 - Settings" loading="lazy">
+                    <!-- Phone Frame 6 -->
+                    <div class="phone-card-item" onclick="openLightbox('assets/Wavly/image6.jpg', 'Custom Audio & Recording Options')">
+                        <div class="mini-phone-frame">
+                            <div class="mini-speaker"></div>
+                            <div class="mini-camera"></div>
+                            <div class="mini-screen">
+                                <img src="assets/Wavly/image6.jpg" alt="Wavly App Screenshot 6 - Recording Preferences & Audio Settings">
+                            </div>
+                            <div class="mini-glass-overlay"></div>
+                            <div class="zoom-hover-badge">🔍 Zoom</div>
                         </div>
-                        <div class="device-caption">
+                        <div class="phone-item-caption">
                             <h4>Preferences</h4>
-                            <p>Custom audio options</p>
+                            <span>Custom audio options</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Fullscreen Screenshot Lightbox Modal -->
+        <div class="lightbox-modal" id="lightbox-modal" onclick="closeLightbox()">
+            <div class="lightbox-content" onclick="event.stopPropagation()">
+                <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+                <img src="" id="lightbox-img" alt="Enlarged Wavly Screenshot">
+                <div class="lightbox-caption" id="lightbox-caption"></div>
+            </div>
+        </div>
 
         <!-- About Creator & Publisher Section -->
         <section id="about" class="about-creator-section">
@@ -452,18 +514,38 @@
         </div>
     </footer>
 
-    <!-- Interactive Script for Screen Switcher -->
+    <!-- Interactive Scripts for Screenshot Track and Lightbox -->
     <script>
-        function changeHeroScreen(src) {
-            const screen = document.getElementById('hero-phone-screen');
-            if (screen) {
-                screen.style.opacity = '0';
-                setTimeout(() => {
-                    screen.src = src;
-                    screen.style.opacity = '1';
-                }, 200);
+        function scrollScreenshots(offset) {
+            const track = document.getElementById('phone-track');
+            if (track) {
+                track.scrollBy({ left: offset, behavior: 'smooth' });
             }
         }
+
+        function openLightbox(src, caption) {
+            const modal = document.getElementById('lightbox-modal');
+            const img = document.getElementById('lightbox-img');
+            const cap = document.getElementById('lightbox-caption');
+            if (modal && img) {
+                img.src = src;
+                if (cap) cap.textContent = caption || '';
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeLightbox() {
+            const modal = document.getElementById('lightbox-modal');
+            if (modal) {
+                modal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+        });
     </script>
     <script src="js/main.js"></script>
 </body>
