@@ -39,6 +39,10 @@
 
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <!-- Structured Data Schema.org for Google Search Indexing -->
     <script type="application/ld+json">
@@ -304,129 +308,103 @@
             </div>
         </section>
 
-        <!-- Interactive Screenshots Side-by-Side Horizontal Showcase Section -->
+        <!-- Swiper Carousel for Screenshot Showcase -->
         <section id="screenshots" class="screenshots-section">
             <div class="section-header-wrap">
                 <div class="section-header-left">
                     <span class="section-badge">INTERFACE GALLERY</span>
                     <h2 class="section-heading">Explore Every Screen</h2>
-                    <p class="section-subheading">Scroll horizontally to view the app in real smartphone frames.</p>
-                </div>
-                <div class="slider-controls">
-                    <button class="slider-btn" id="slide-left-btn" onclick="scrollScreenshots(-320)" aria-label="Scroll Screenshots Left">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
-                    </button>
-                    <button class="slider-btn" id="slide-right-btn" onclick="scrollScreenshots(320)" aria-label="Scroll Screenshots Right">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
-                    </button>
+                    <p class="section-subheading">Swipe to view the app in realistic smartphone frames.</p>
                 </div>
             </div>
 
-            <!-- Horizontal Phone Track -->
-            <div class="horizontal-phone-track-wrapper reveal">
-                <div class="horizontal-phone-track" id="phone-track">
-                    <!-- Phone Frame 1 -->
-                    <div class="phone-card-item" onclick="openLightbox('assets/Wavly/image1.jpg', 'HD Waveform Recorder Screen')">
-                        <div class="mini-phone-frame">
-                            <div class="mini-speaker"></div>
-                            <div class="mini-camera"></div>
-                            <div class="mini-screen">
-                                <img src="assets/Wavly/image1.jpg" alt="Wavly App Screenshot 1 - Audio Recording Waveform Interface">
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="phone-card-item" onclick="openLightbox('assets/Wavly/image1.jpg', 'HD Waveform Recorder Screen')">
+                            <div class="mini-phone-frame">
+                                <div class="mini-speaker"></div>
+                                <div class="mini-camera"></div>
+                                <div class="mini-screen"><img src="assets/Wavly/image1.jpg" alt="Wavly App Screenshot 1 - Audio Recording Waveform Interface"></div>
+                                <div class="mini-glass-overlay"></div>
+                                <div class="zoom-hover-badge">🔍 Zoom</div>
                             </div>
-                            <div class="mini-glass-overlay"></div>
-                            <div class="zoom-hover-badge">🔍 Zoom</div>
-                        </div>
-                        <div class="phone-item-caption">
-                            <h4>Recorder Screen</h4>
-                            <span>Real-time waveform visualizer</span>
+                            <div class="phone-item-caption"><h4>Recorder Screen</h4><span>Real-time waveform visualizer</span></div>
                         </div>
                     </div>
-
-                    <!-- Phone Frame 2 -->
-                    <div class="phone-card-item" onclick="openLightbox('assets/Wavly/image2.jpg', 'Organized Audio Library')">
-                        <div class="mini-phone-frame">
-                            <div class="mini-speaker"></div>
-                            <div class="mini-camera"></div>
-                            <div class="mini-screen">
-                                <img src="assets/Wavly/image2.jpg" alt="Wavly App Screenshot 2 - Voice Notes & Audio File List">
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="phone-card-item" onclick="openLightbox('assets/Wavly/image2.jpg', 'Organized Audio Library')">
+                            <div class="mini-phone-frame">
+                                <div class="mini-speaker"></div>
+                                <div class="mini-camera"></div>
+                                <div class="mini-screen"><img src="assets/Wavly/image2.jpg" alt="Wavly App Screenshot 2 - Voice Notes & Audio File List"></div>
+                                <div class="mini-glass-overlay"></div>
+                                <div class="zoom-hover-badge">🔍 Zoom</div>
                             </div>
-                            <div class="mini-glass-overlay"></div>
-                            <div class="zoom-hover-badge">🔍 Zoom</div>
-                        </div>
-                        <div class="phone-item-caption">
-                            <h4>Recordings Library</h4>
-                            <span>Organized audio list</span>
+                            <div class="phone-item-caption"><h4>Recordings Library</h4><span>Organized audio list</span></div>
                         </div>
                     </div>
-
-                    <!-- Phone Frame 3 -->
-                    <div class="phone-card-item" onclick="openLightbox('assets/Wavly/image3.jpg', 'Precision Audio Waveform Trimming')">
-                        <div class="mini-phone-frame">
-                            <div class="mini-speaker"></div>
-                            <div class="mini-camera"></div>
-                            <div class="mini-screen">
-                                <img src="assets/Wavly/image3.jpg" alt="Wavly App Screenshot 3 - Audio Editor & Trimming Tool">
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="phone-card-item" onclick="openLightbox('assets/Wavly/image3.jpg', 'Precision Audio Waveform Trimming')">
+                            <div class="mini-phone-frame">
+                                <div class="mini-speaker"></div>
+                                <div class="mini-camera"></div>
+                                <div class="mini-screen"><img src="assets/Wavly/image3.jpg" alt="Wavly App Screenshot 3 - Audio Editor & Trimming Tool"></div>
+                                <div class="mini-glass-overlay"></div>
+                                <div class="zoom-hover-badge">🔍 Zoom</div>
                             </div>
-                            <div class="mini-glass-overlay"></div>
-                            <div class="zoom-hover-badge">🔍 Zoom</div>
-                        </div>
-                        <div class="phone-item-caption">
-                            <h4>Audio Editor</h4>
-                            <span>Precision waveform cutter</span>
+                            <div class="phone-item-caption"><h4>Audio Editor</h4><span>Precision waveform cutter</span></div>
                         </div>
                     </div>
-
-                    <!-- Phone Frame 4 -->
-                    <div class="phone-card-item" onclick="openLightbox('assets/Wavly/image4.jpg', 'Google Drive Cloud Sync Settings')">
-                        <div class="mini-phone-frame">
-                            <div class="mini-speaker"></div>
-                            <div class="mini-camera"></div>
-                            <div class="mini-screen">
-                                <img src="assets/Wavly/image4.jpg" alt="Wavly App Screenshot 4 - Google Drive Cloud Backup Settings">
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                        <div class="phone-card-item" onclick="openLightbox('assets/Wavly/image4.jpg', 'Google Drive Cloud Sync Settings')">
+                            <div class="mini-phone-frame">
+                                <div class="mini-speaker"></div>
+                                <div class="mini-camera"></div>
+                                <div class="mini-screen"><img src="assets/Wavly/image4.jpg" alt="Wavly App Screenshot 4 - Google Drive Cloud Backup Settings"></div>
+                                <div class="mini-glass-overlay"></div>
+                                <div class="zoom-hover-badge">🔍 Zoom</div>
                             </div>
-                            <div class="mini-glass-overlay"></div>
-                            <div class="zoom-hover-badge">🔍 Zoom</div>
-                        </div>
-                        <div class="phone-item-caption">
-                            <h4>Cloud Backup</h4>
-                            <span>Google Drive integration</span>
+                            <div class="phone-item-caption"><h4>Cloud Backup</h4><span>Google Drive integration</span></div>
                         </div>
                     </div>
-
-                    <!-- Phone Frame 5 -->
-                    <div class="phone-card-item" onclick="openLightbox('assets/Wavly/image5.jpg', 'High-Fidelity Audio Player')">
-                        <div class="mini-phone-frame">
-                            <div class="mini-speaker"></div>
-                            <div class="mini-camera"></div>
-                            <div class="mini-screen">
-                                <img src="assets/Wavly/image5.jpg" alt="Wavly App Screenshot 5 - Audio Player & Waveform Visualizer">
+                    <!-- Slide 5 -->
+                    <div class="swiper-slide">
+                        <div class="phone-card-item" onclick="openLightbox('assets/Wavly/image5.jpg', 'High-Fidelity Audio Player')">
+                            <div class="mini-phone-frame">
+                                <div class="mini-speaker"></div>
+                                <div class="mini-camera"></div>
+                                <div class="mini-screen"><img src="assets/Wavly/image5.jpg" alt="Wavly App Screenshot 5 - Audio Player & Waveform Visualizer"></div>
+                                <div class="mini-glass-overlay"></div>
+                                <div class="zoom-hover-badge">🔍 Zoom</div>
                             </div>
-                            <div class="mini-glass-overlay"></div>
-                            <div class="zoom-hover-badge">🔍 Zoom</div>
-                        </div>
-                        <div class="phone-item-caption">
-                            <h4>HD Audio Player</h4>
-                            <span>Smooth playback control</span>
+                            <div class="phone-item-caption"><h4>HD Audio Player</h4><span>Smooth playback control</span></div>
                         </div>
                     </div>
-
-                    <!-- Phone Frame 6 -->
-                    <div class="phone-card-item" onclick="openLightbox('assets/Wavly/image6.jpg', 'Custom Audio & Recording Options')">
-                        <div class="mini-phone-frame">
-                            <div class="mini-speaker"></div>
-                            <div class="mini-camera"></div>
-                            <div class="mini-screen">
-                                <img src="assets/Wavly/image6.jpg" alt="Wavly App Screenshot 6 - Recording Preferences & Audio Settings">
+                    <!-- Slide 6 -->
+                    <div class="swiper-slide">
+                        <div class="phone-card-item" onclick="openLightbox('assets/Wavly/image6.jpg', 'Custom Audio & Recording Options')">
+                            <div class="mini-phone-frame">
+                                <div class="mini-speaker"></div>
+                                <div class="mini-camera"></div>
+                                <div class="mini-screen"><img src="assets/Wavly/image6.jpg" alt="Wavly App Screenshot 6 - Recording Preferences & Audio Settings"></div>
+                                <div class="mini-glass-overlay"></div>
+                                <div class="zoom-hover-badge">🔍 Zoom</div>
                             </div>
-                            <div class="mini-glass-overlay"></div>
-                            <div class="zoom-hover-badge">🔍 Zoom</div>
-                        </div>
-                        <div class="phone-item-caption">
-                            <h4>Preferences</h4>
-                            <span>Custom audio options</span>
+                            <div class="phone-item-caption"><h4>Preferences</h4><span>Custom audio options</span></div>
                         </div>
                     </div>
                 </div>
+                <!-- Navigation -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
             </div>
         </section>
 
@@ -548,6 +526,23 @@
         });
     </script>
     <script src="js/main.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            loop: false,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            // Optional: enable keyboard navigation
+            keyboard: {
+                enabled: true,
+            },
+        });
+    </script>
 </body>
 
 </html>
